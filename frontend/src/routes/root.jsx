@@ -1,41 +1,21 @@
 import { Outlet, Link } from "react-router-dom";
+import "../index.css";
 
 export default function Root() {
+  const cars = ["Saab", "Volvo", "BMW","Saab", "Volvo", "BMW","Saab", "Volvo", "BMW","Saab", "Volvo", "BMW","Saab", "Volvo", "BMW"];
+  const renderList = cars.map((item) => <li><Link  to={`contacts/`+item}>{item}</Link></li>);
     return (
       <>
         <div id="sidebar">
           <h1>React Router Contacts</h1>
           <div>
-            {/* <form id="search-form" role="search">
-              <input
-                id="q"
-                aria-label="Search contacts"
-                placeholder="Search"
-                type="search"
-                name="q"
-              />
-              <div
-                id="search-spinner"
-                aria-hidden
-                hidden={true}
-              />
-              <div
-                className="sr-only"
-                aria-live="polite"
-              ></div>
-            </form> */}
-            <form method="post">
-              <button type="submit">Take your test now</button>
+            <form method="post" className="center container">
+              <button type="submit" >Take your test now</button>
             </form>
-          </div>
+          </div >
           <nav>
             <ul>
-              <li>
-              <Link to={`contacts/1`}>Your Name</Link>
-              </li>
-              <li>
-              <Link to={`contacts/2`}>Your Friend</Link>
-              </li>
+              {renderList}
             </ul>
           </nav>
         </div>
