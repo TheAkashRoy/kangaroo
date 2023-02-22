@@ -6,7 +6,7 @@ export default function Root() {
         <div id="sidebar">
           <h1>React Router Contacts</h1>
           <div>
-            <form id="search-form" role="search">
+            {/* <form id="search-form" role="search">
               <input
                 id="q"
                 aria-label="Search contacts"
@@ -23,9 +23,9 @@ export default function Root() {
                 className="sr-only"
                 aria-live="polite"
               ></div>
-            </form>
+            </form> */}
             <form method="post">
-              <button type="submit">New</button>
+              <button type="submit">Take your test now</button>
             </form>
           </div>
           <nav>
