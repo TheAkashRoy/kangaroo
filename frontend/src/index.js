@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import ErrorPage from "./error-page";
 import "./index.css";
-import Contact from "./routes/contact";
+import Diss from "./routes/diss";
 import Root from "./routes/root";
 
 const router = createBrowserRouter([
@@ -16,8 +16,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "contacts/:contactId",
-        element: <Contact />,
+        path: "disease/:diseaseId",
+        element: <Diss />,
       },
     ],
   },

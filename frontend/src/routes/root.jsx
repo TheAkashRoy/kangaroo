@@ -20,7 +20,7 @@ export default function Root() {
           </nav>
         </div>
         <Outlet />
-        <div id="detail"></div>
+        {/* <div id="detail"></div> */}
       </>
     );
   }
