@@ -3,7 +3,7 @@ import "../index.css";
 
 export default function Root() {
   const cars = ["Saab", "Volvo", "BMW","Saab", "Volvo", "BMW","Saab", "Volvo", "BMW","Saab", "Volvo", "BMW","Saab", "Volvo", "BMW"];
-  const renderList = cars.map((item) => <li><Link  to={`contacts/`+item}>{item}</Link></li>);
+  const renderList = cars.map((item) => <li><Link  to={`disease/`+1}>{item}</Link></li>);
     return (
       <>
         <div id="sidebar">
